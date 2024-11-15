@@ -1,0 +1,206 @@
+/* General Body and Layout */
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #121212;
+  color: whitesmoke;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header-container {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Navigation */
+.nav-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgb(246, 191, 38);
+  color: #1e3e62;
+}
+
+/* Form Section */
+.contact-form-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #3c3d37;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: rgb(246, 191, 38);
+  color: black;
+}
+
+.Calendar {
+  background-color: #181c14 ;
+}
+
+.intro{
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin:20px;
+}
+
+/* Profile Image */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.divider {
+  background-color: rgb(246, 191, 38);
+  width: 100%;
+  height: 20px;
+  margin: 30px 0;
+}
+
+/* Buttons */
+.cv-button {
+  bottom: calc(100vh - 50px);
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cv-button:hover {
+  background-color:rgb(246, 191, 38);
+  color: black;
+}
+
+/* Divider */
+.divider {
+  background-color: rgb(246, 191, 38);
+  width: 100%;
+  height: 20px;
+  margin: 30px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+
+.card {
+border-radius: 10px;
+padding: 20px;
+width: 30%;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+text-decoration: none;
+margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: transalateY(-3px);
+  box-shadow: whitesmoke;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card img {
+  background-color: white;
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    max-width: 200px; /* Set a maximum width for consistency */
+    height: 150px; /* Set a uniform height */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin: 0 auto 20px; /* Center images and add bottom margin */
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+.card a {
+    display: block; /* Make the link block level to fill the card */
+    background-color: #34A853; /* Google Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Space above the button */
+}
+
+.card a:hover {
+    background-color: #ff0000; /* Darker Green on hover */
+}
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 900px) {
+    .card {
+        width: 45%; /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* One card per row on small screens */
+    }
+}
+
